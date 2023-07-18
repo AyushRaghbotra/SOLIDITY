@@ -1,41 +1,25 @@
-# Project Title
+# FINAL SOLIDITY PROJECT
 
-Simple overview of use/purpose.
+WE will now create your very own token
 
 ## Description
-
-An in-depth paragraph about your project and overview of use.
+Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
+Your contract will have a mapping of addresses to balances (address => uint)
+You will have a mint function that takes two parameters: an address and a value. The function then increases the total supply by that number and increases the balance of the address by that amount.
+Your contract will have a burn function, which works the opposite of the mint function, as it will destroy tokens. It will take an address and value just like the mint functions. It will then deduct the value from the total supply and from the balance of the address.
+Lastly, your burn function should have conditionals to make sure the balance of account is greater than or equal to the amount that is supposed to be burned.
 
 ## Getting Started
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+=>Intially public variable(Token Name : SOLIDITY, Token Abbrv: SOLDY, Total Supply : 50)
+=> Then ther is the mapping function (address => uint).
+=> THEN will have a mint function that takes two parameters: (an address :space and uint: value).
+=>THEN there is burn fucntion same parameters but with a condition { require(balances[space]>= value, "INSUFFICIENT BALANCE");} 
 
 ### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+=> Complile the contract.
+=>Then switch to depoly & run transactions.
+=>Then click on deploy.
+=>There will be are all variable then we can mint burn and cheak your require conditon by copying the account.
 
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
