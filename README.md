@@ -11,7 +11,7 @@ Lastly, your burn function should have conditionals to make sure the balance of 
 
 ## Getting Started
 
-=>Intially public variable(Token Name : SOLIDITY, Token Abbrv: SOLDY, Total Supply : 50)
+=>Intially public variable(Token Name : SOLIDITY, Token Abbrv: SOLDY, Total Supply : 50)\n
 => Then ther is the mapping function (address => uint).
 => THEN will have a mint function that takes two parameters: (an address :space and uint: value).
 =>THEN there is burn fucntion same parameters but with a condition { require(balances[space]>= value, "INSUFFICIENT BALANCE");} 
